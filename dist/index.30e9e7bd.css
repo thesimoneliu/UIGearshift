@@ -50,6 +50,12 @@ body {
   transform: translateX(-1%);
 }
 
+@media (max-width: 768px) {
+  .gear__name__wrapper {
+    padding: 230px 0;
+  }
+}
+
 .gear__name {
   color: #d0d0d0;
   font-size: 56px;
@@ -58,6 +64,18 @@ body {
 .gear__name--active {
   color: #fff;
   font-size: 72px;
+}
+
+@media (max-width: 768px) {
+  .gear__name {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .gear__name--active {
+    color: #fff;
+    font-size: 48px;
+  }
 }
 
 .gear__wrapper {

@@ -142,9 +142,9 @@ class App {
   -------------- */
 
   addEventListeners(element) {
-    element.addEventListener('mousedown', this.onTouchStart.bind(this))
-    element.addEventListener('mousemove', this.onTouchMove.bind(this))
-    element.addEventListener('mouseup', this.onTouchEnd.bind(this))
+    // element.addEventListener('mousedown', this.onTouchStart.bind(this))
+    // element.addEventListener('mousemove', this.onTouchMove.bind(this))
+    // element.addEventListener('mouseup', this.onTouchEnd.bind(this))
     element.addEventListener('touchstart', this.onTouchStart.bind(this))
     element.addEventListener('touchmove', this.onTouchMove.bind(this))
     element.addEventListener('touchend', this.onTouchEnd.bind(this))
