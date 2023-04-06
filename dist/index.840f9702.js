@@ -4850,6 +4850,6 @@ var CSSPlugin = {
 });
 (0, _gsapCoreJs.gsap).registerPlugin(CSSPlugin);
 
-},{"./gsap-core.js":"05eeC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["bUI0q","9XOu0"], "9XOu0", "parcelRequire9641")
+},{"./gsap-core.js":"05eeC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["bUI0q","9XOu0"], "9XOu0", "parcelRequirebb15")
 
 //# sourceMappingURL=index.840f9702.js.map
