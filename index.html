@@ -12,9 +12,9 @@
 
     <div class="gear__container">
       <div class="gear__name__wrapper">
-        <span class="gear__name">R</span>
-        <span class="gear__name--active">N</span>
-        <span class="gear__name">D</span>
+        <span id="gearR" class="gear__name">R</span>
+        <span id="gearN" class="gear__name--active">N</span>
+        <span id="gearD" class="gear__name">D</span>
       </div>
 
       <svg
@@ -44,8 +44,12 @@
               filter: url(#drop-shadow);
             }
 
-            .btn__outerGlow {
+            .btn__outerGlow-blue {
               filter: url(#outer-glow-blue);
+            }
+
+            .btn__outerGlow-white {
+              filter: url(#outer-glow-white);
             }
 
             .outerBase__dropShadow {
@@ -110,6 +114,13 @@
             <feGaussianBlur result="blur-glow" stdDeviation="10" />
             <feFlood flood-color="#1c60e8" flood-opacity=".55" />
             <feComposite in2="blur-glow" operator="in" />
+            <feComposite in="SourceGraphic" />
+          </filter>
+          <filter id="outer-glow-white" filterUnits="userSpaceOnUse">
+            <feOffset dx="0" dy="0" />
+            <feGaussianBlur result="blur" stdDeviation="15" />
+            <feFlood flood-color="#3d8bfc" flood-opacity="1" />
+            <feComposite in2="blur" operator="in" />
             <feComposite in="SourceGraphic" />
           </filter>
           <filter id="drop-shadow-outerBase" filterUnits="userSpaceOnUse">

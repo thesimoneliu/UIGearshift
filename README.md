@@ -5,8 +5,9 @@
 1. Connect your computer to the WiFi
 2. Download this file, or clone this file to your local computer
 3. On your computer, open the terminal and direct to this file
-4. In your terminal, run `npx parcel build index.html`
-5. You can now view the prototype live at http://localhost:8080
+4. In your terminal, run `npm install`
+5. Then run `npx parcel build index.html`
+6. You can now view the prototype live at http://localhost:8080
 
 ### Then, you can test this prototype in your targeted device (now Safari on iOS deviced only) following the steps below
 

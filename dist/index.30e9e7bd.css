@@ -8,8 +8,8 @@ body {
   flex-direction: row;
   margin: 0;
   padding: 0;
-  font-family: Open Sans;
-  font-size: 60px;
+  font-family: Open Sans, Arial, Helvetica;
+  font-size: 56px;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -39,6 +39,7 @@ body {
   height: 100%;
   text-align: center;
   pointer-events: none;
+  color: #d0d0d0;
   z-index: 2;
   flex-direction: column;
   justify-content: space-around;
@@ -51,10 +52,12 @@ body {
 
 .gear__name {
   color: #d0d0d0;
+  font-size: 56px;
 }
 
 .gear__name--active {
   color: #fff;
+  font-size: 72px;
 }
 
 .gear__wrapper {
