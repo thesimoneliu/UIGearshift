@@ -16,3 +16,15 @@
 3. Open Safari
 4. Go to http://your-IP-address:8080
 5. You will be able to view the live prototype
+
+# Design Process
+
+![alt text](https://file.notion.so/f/s/24caee27-5eac-4f92-b5fb-b01e5b935e71/1.gif?id=cee99bb4-b8fa-4fbe-9301-7c587308be64&table=block&spaceId=1c6f30fc-5e05-4da6-b757-219947e45167&expirationTimestamp=1680896868911&signature=SFnxSfDWZylYO2ngVzwh1Jzwa-WOoLXcq7yGweO8cio&downloadName=1.gif 'Logo Title Text 1')
+
+Design Decision
+
+Bugs
+
+Try Next
+
+Demo
