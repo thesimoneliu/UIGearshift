@@ -557,6 +557,7 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"9XOu0":[function(require,module,exports) {
+const ws = new WebSocket("ws://localhost:4444");
 class App {
     constructor(){
         // moving target
@@ -615,6 +616,7 @@ class App {
             target: 0,
             lerp: 0.1
         };
+        // sounds
         this.sounds = {
             start: new Audio({
                 volume: 0.2,
@@ -875,6 +877,14 @@ class App {
     }
 }
 new App();
+/* -------------
+  ------------ WEB SOCKET
+  -------------- */ ws.addEventListener("open", ()=>{
+    // when websocket is connected
+    console.log("WebSocket connection established in the front-end");
+    socket.send(gearStatus) // send string
+    ;
+});
 
 },{}]},["bUI0q","9XOu0"], "9XOu0", "parcelRequirebb15")
 
