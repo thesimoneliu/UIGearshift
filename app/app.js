@@ -7,7 +7,7 @@
 // import OnDrag from './motionStates/ondrag'
 // import OnDragEnd from './motionStates/ondragEnd'
 
-export default class App {
+class App {
   constructor() {
     // moving target
     this.control_wrapper = document.querySelector('.btnController--active')
