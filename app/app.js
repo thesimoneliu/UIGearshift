@@ -1,4 +1,5 @@
-const ws = new WebSocket('ws://localhost:4444')
+const WS = new WebSocket('ws://localhost:4444')
+let gearStatus = ''
 
 class App {
   constructor() {
@@ -20,6 +21,7 @@ class App {
     this.nZone = document.querySelector('#btnN')
     this.dZone = document.querySelector('#btnD')
     this.zoneRND = [false, true, false]
+    this.activeGear = 'Neutral'
     // bounds
     this.validArea = document.querySelector('.groove')
     this.bound = this.validArea.getBoundingClientRect()
@@ -145,9 +147,9 @@ class App {
   -------------- */
 
   addEventListeners(element) {
-    // element.addEventListener('mousedown', this.onTouchStart.bind(this))
-    // element.addEventListener('mousemove', this.onTouchMove.bind(this))
-    // element.addEventListener('mouseup', this.onTouchEnd.bind(this))
+    element.addEventListener('mousedown', this.onTouchStart.bind(this))
+    element.addEventListener('mousemove', this.onTouchMove.bind(this))
+    element.addEventListener('mouseup', this.onTouchEnd.bind(this))
     element.addEventListener('touchstart', this.onTouchStart.bind(this))
     element.addEventListener('touchmove', this.onTouchMove.bind(this))
     element.addEventListener('touchend', this.onTouchEnd.bind(this))
@@ -169,6 +171,7 @@ class App {
   update() {
     this.detectBoundingBox()
     this.detectMotionStates(this.motionStateName, this.control)
+    this.detectGearStatus()
 
     switch (this.motionStateName) {
       case 'normalState':
@@ -358,6 +361,21 @@ class App {
     }
   }
 
+  detectGearStatus() {
+    this.activeGear = document.querySelector('.gear__name--active').getAttribute('id')
+
+    if (this.activeGear === 'gearN') {
+      gearStatus = 'Neutral'
+    }
+    if (this.activeGear === 'gearR') {
+      gearStatus = 'Reverse'
+    }
+    if (this.activeGear === 'gearD') {
+      gearStatus = 'Drive'
+    }
+    console.log(gearStatus)
+  }
+
   changeBtnColor(motionStateName, control) {
     let controlId = control.getAttribute('class')
     let gradientId = controlId.replace(/^btn(\w+)-color$/, '#linear-gradient-$1')
@@ -405,8 +423,7 @@ new App()
   ------------ WEB SOCKET
   -------------- */
 
-ws.addEventListener('open', () => {
-  // when websocket is connected
-  console.log('WebSocket connection established in the front-end')
+WS.addEventListener('open', () => {
+  console.log('WebSocket connection established in the front-end') // when websocket is connected
   socket.send(gearStatus) // send string
 })

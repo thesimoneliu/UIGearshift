@@ -27,17 +27,20 @@ So I decided to focus only on the gear shifter itself that should be placed on t
 
 1. **Visual Metaphor**
 
-I asked friends about their feelings and opinions about a digital gear-shifter. Most of them told me a digital stalk would be weird. I then decided to design in a way that follows their current mental model. <br/>
+   I asked friends about their feelings and opinions about a digital gear-shifter. Most of them told me a digital stalk would be weird. I then decided to design in a way that follows their current mental model. <br/>
 
-At first, I approached the digital gear button like the old-vintage one with a trigger on the side. Then I figured Tesla actually used that trigger as a 'Park' gear. <br/>
+   At first, I approached the digital gear button like the old-vintage one with a trigger on the side. Then I figured Tesla actually used that trigger as a 'Park' gear. <br/>
 
-I then shifted my focus from the similarity of appearance to the similarity of interaction. My assumption here is that the user perceives the gear shifter to be operated to different internal deep grooves. So I'm thinking, instead of switching internal grooves (which sounds vintage and a heavy labor of work), how about making this interaction more fluid, by creating a base with grooves that magnetically attracts the gear button, just like how Maglev feels? <br>
+   I then shifted my focus from the similarity of appearance to the similarity of interaction. My assumption here is that the user perceives the gear shifter to be operated to different internal deep grooves. So I'm thinking, instead of switching internal grooves (which sounds vintage and a heavy labor of work), how about making this interaction more fluid, by creating a base with grooves that magnetically attracts the gear button, just like how Maglev feels? <br>
 
 ![alt text](./assets/visual-roadmap.jpg 'A Visual Roadmap')
 
+<br/>
+<br/>
+
 2. **Motion States**
 
-I designed 5 motion states for overall interaction.
+   I designed 5 motion states for overall interaction.
 
 - `normalState` an inactive state when the user is not doing anything
   The gear button is grey. The name of the gear is highlighted white.
@@ -49,21 +52,30 @@ I designed 5 motion states for overall interaction.
 
 ![alt text](./assets/motionstates.jpg 'Gear Button in 5 Motion States')
 
+<br/>
+<br/>
+
 3. **Sound**
 
 When driving, the failure state can be hard to notice visually. I added sound in `prepFailureState` to notify the user for a second try. I also think the feeling of the sound matches the feeling of the bouncy motion.
 
 Soundfile: [sound file from Pixeabay](https://cdn.pixabay.com/download/audio/2023/01/04/audio_8969bfb5fa.mp3?filename=error-warning-login-denied-132113.mp3g)
 
-4. **Bug fixes**
+<br/>
+<br/>
 
-- The flashing effect between some frames
+4. **Bug Explanations**
 
-- Code performance on iPad/iPhone
+   1. The flashing effect between some frames
+   2. Code performance on iPad/iPhone
+   3. Sound not available on iPad/iPhone
+
+<br/>
+<br/>
 
 5. **Future Steps**
 
-5-day for me is a short tiem to make this prototype as detailed and comprehensive as possible. If there's more time, I'd like to do:
+   5-day for me is a short tiem to make this prototype as detailed and comprehensive as possible. If there's more time, I'd like to do:
 
 - The metaball effect between gear transitions.
 
@@ -78,4 +90,11 @@ Soundfile: [sound file from Pixeabay](https://cdn.pixabay.com/download/audio/202
 
   I approached this problem by thinking of the mental model and neumorphism. What if I don't go too literal about its physical origins and think more abstractly what would signal to the user that the car is now active?
 
+<br/>
+<br/>
+
 6. **Demo**
+
+   If you want to test the socket, the current gear sent to the socket will displayed in the console if you run this project on your local computer.
+
+![Demo Video](https://vimeo.com/815479515)
