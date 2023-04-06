@@ -1,5 +1,4 @@
-import GSAP from 'gsap'
-
+// import GSAP from 'gsap'
 // import { getSVGMatrix, transformFromViewportToSVGElement, changeBtnColor } from './utils'
 // import Normal from './motionStates/normal'
 // import Prep from './motionStates/prep'
@@ -281,6 +280,8 @@ export default class App {
       : this.zoneRND[2]
       ? snapY_svgCanvas.max // snap to dzone
       : 0 // snap to nzone
+
+    // change gear_name style
 
     // implement snap
     this.control_wrapper.setAttribute('transform', `matrix(${matrix.join(',')})`)
