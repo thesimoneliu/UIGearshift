@@ -21,9 +21,9 @@
 
 This is a response to Tesla's 5-day coding challenge.
 
-I started from discovery and research by looking at current Tesla test-drive and touchscreen videos.
-I am aware that this digital Gear-shifter should be designed under a bigger system and affect other elements on the screen such as the right-side view, the speed display, other elements' positions and etc, which might cause too much complexity if all taken into considerations.
-So I decided to focus only on the gear shifter itself that should be placed on the left side of the screen.
+I started from discovery and research by looking at current Tesla test-drive and touchscreen videos.<br/>
+I am aware that this digital Gear-shifter should be designed under a bigger system and affect other elements on the screen such as the right-side view, the speed display, other elements' positions and etc, which might cause too much complexity if all taken into considerations.<br/>
+So I decided to focus only on the gear shifter itself that should be placed on the left side of the screen.<br/>
 
 1. Visual Metaphor
 
@@ -51,8 +51,22 @@ I designed 5 motion states for overall interaction.
 
 When driving, the failure state can be hard to notice visually. I added sound in `prepFailureState` to notify the user for a second try. I also think the feeling of the sound matches the feeling of the bouncy motion.
 
+Soundfile: [sound file from Pixeabay](https://cdn.pixabay.com/download/audio/2023/01/04/audio_8969bfb5fa.mp3?filename=error-warning-login-denied-132113.mp3g)
+
 4. Bug fixes
 
+- The flashing effect between some frames
+-
+
 5. Future Steps
+
+5-day for me is a short tiem to make this prototype as detailed and comprehensive as possible. If there's more time, I'd like to do:
+
+- The metaball effect between gear transitions.
+
+  Originally, when designing a base like this, I was thinking of adding the metaball effect so that when dragging between different gears, the user can see the button flowing from one groove to the other.<br/>
+  I've played with it with Touchdesigner. The logic is to blur shapes before sharpening their edges. But I've been using SVG files instead of rasterized images in this prototype. It took me a lot of time to understand how `<feGaussianBlur>` works and more. I saw a paperscript metaball example online. It will be fun to try it out.
+
+- The speed velocity of the dragging movement. I do think
 
 6. Demo
