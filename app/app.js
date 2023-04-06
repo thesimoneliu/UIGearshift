@@ -61,6 +61,7 @@ class App {
       lerp: 0.1,
     }
 
+    // sounds
     this.sounds = {
       start: new Audio({
         volume: 0.2,
@@ -76,6 +77,8 @@ class App {
         'https://cdn.pixabay.com/download/audio/2023/01/04/audio_8969bfb5fa.mp3?filename=error-warning-login-denied-132113.mp3'
       ),
     }
+
+    this.ws = new WebSocket('ws://localhost:4444')
 
     this.addEventListeners(this.control_wrapper)
     this.addSnapListeners()
@@ -398,6 +401,16 @@ class App {
   /* -------------
   ------------ WEB SOCKET
   -------------- */
+
+
+
+  
+  this.ws.addEventListener('open', () => {
+    // when websocket is connected
+    console.log('WebSocket connection established in the front-end')
+    socket.send(gearStatus) // send string
+  })
+
 }
 
 new App()
