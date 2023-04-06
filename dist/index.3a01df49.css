@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+  top: 0;
+  left: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#screen {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+}
+
+.speed__wrapper {
+  width: 60%;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: pink;
+  flex-direction: column;
+  display: flex;
+}
+
+.speed__value {
+  padding: 7rem 10rem;
+  font-size: 10rem;
+}
+
+.speed__measure {
+  font-size: 1.8rem;
+}
+
+.gear__wrapper {
+  width: 40%;
+  height: 100%;
+  background-color: #ea67c3;
+  position: relative;
+}
+
+.gear__svg__wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  scale: 50%;
+}
+
+.sliderBase {
+  cursor: not-allowed;
+}
+
+.handleBar, .triggerBtn {
+  cursor: pointer;
+}
+
+.gear__name__wrapper {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transform: translateX(-1.2rem);
+}
+
+.gear__name {
+  color: #888;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.gear__name--active {
+  color: #ebebeb;
+  font-size: 3.2rem;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
