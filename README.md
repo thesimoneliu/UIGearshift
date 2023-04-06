@@ -36,7 +36,6 @@ So I decided to focus only on the gear shifter itself that should be placed on t
 ![alt text](./assets/visual-roadmap.jpg 'A Visual Roadmap')
 
 <br/>
-<br/>
 
 2. **Motion States**
 
@@ -53,7 +52,6 @@ So I decided to focus only on the gear shifter itself that should be placed on t
 ![alt text](./assets/motionstates.jpg 'Gear Button in 5 Motion States')
 
 <br/>
-<br/>
 
 3. **Sound**
 
@@ -62,7 +60,6 @@ When driving, the failure state can be hard to notice visually. I added sound in
 Soundfile: [sound file from Pixeabay](https://cdn.pixabay.com/download/audio/2023/01/04/audio_8969bfb5fa.mp3?filename=error-warning-login-denied-132113.mp3g)
 
 <br/>
-<br/>
 
 4. **Bug Explanations**
 
@@ -70,7 +67,6 @@ Soundfile: [sound file from Pixeabay](https://cdn.pixabay.com/download/audio/202
    2. Code performance on iPad/iPhone
    3. Sound not available on iPad/iPhone
 
-<br/>
 <br/>
 
 5. **Future Steps**
@@ -90,7 +86,6 @@ Soundfile: [sound file from Pixeabay](https://cdn.pixabay.com/download/audio/202
 
   I approached this problem by thinking of the mental model and neumorphism. What if I don't go too literal about its physical origins and think more abstractly what would signal to the user that the car is now active?
 
-<br/>
 <br/>
 
 6. **Demo**
